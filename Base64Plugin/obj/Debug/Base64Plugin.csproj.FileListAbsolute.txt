@@ -1,0 +1,8 @@
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\bin\Debug\Base64Plugin.dll
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\bin\Debug\Base64Plugin.pdb
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\bin\Debug\PluginInterface.dll
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\bin\Debug\PluginInterface.pdb
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\obj\Debug\Base64Plugin.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\obj\Debug\Base64Plugin.csproj.CopyComplete
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\obj\Debug\Base64Plugin.dll
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\Base64Plugin\obj\Debug\Base64Plugin.pdb

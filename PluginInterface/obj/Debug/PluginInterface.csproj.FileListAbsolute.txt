@@ -1,0 +1,4 @@
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\PluginInterface\bin\Debug\PluginInterface.dll
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\PluginInterface\bin\Debug\PluginInterface.pdb
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\PluginInterface\obj\Debug\PluginInterface.dll
+C:\Users\USER\Desktop\лб\ооп\CatalogAppWinForm\CatalogApp\PluginInterface\obj\Debug\PluginInterface.pdb
