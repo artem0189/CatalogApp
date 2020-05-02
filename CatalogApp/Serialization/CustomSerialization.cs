@@ -54,7 +54,7 @@ namespace CatalogApp.Serialization
             var type = obj.GetType();
             foreach (var value in dictionary)
             {
-                PropertyInfo propertyInfo = type.GetProperty(value.Key);
+                PropertyInfo propertyInfo = type.GetProperty(value.Key.Substring(0, value.Key.IndexOf('|')));
                 if (value.Value.IndexOf('{') != value.Value.LastIndexOf('{'))
                 {
                     propertyInfo.SetValue(obj, ConvertStringToObject(value.Value, ref list));
@@ -88,7 +88,7 @@ namespace CatalogApp.Serialization
                 }
                 if (content[i] == '}' && countOfBrackets == 0)
                 {
-                    dictionary.Add(obj.Substring(0, obj.IndexOf('{')), obj.Substring(obj.IndexOf('{')));
+                    dictionary.Add(obj.Substring(0, obj.IndexOf('{')) + "|" + dictionary.Count, obj.Substring(obj.IndexOf('{')));
                     obj = "";
                 }
             }
@@ -102,7 +102,7 @@ namespace CatalogApp.Serialization
             var objects = GetListOfObjects(content);
             foreach (var obj in objects)
             {
-                newObject = Activator.CreateInstance(Type.GetType(obj.Key, false, true));
+                newObject = Activator.CreateInstance(Type.GetType(obj.Key.Substring(0, obj.Key.IndexOf('|')), false, true));
                 var properties = GetListOfObjects(obj.Value);
                 FillObject(ref newObject, properties);
                 list.Add(newObject);
