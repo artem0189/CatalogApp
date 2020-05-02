@@ -246,13 +246,13 @@ namespace CatalogApp
 
         private void SaveFile(object sender, EventArgs e, Type type)
         {
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 object deserializer = Activator.CreateInstance(type);
 
-                var filePath = openFileDialog.FileName;
+                var filePath = saveFileDialog.FileName;
                 string extension = "";
-                using (FileStream file = new FileStream(filePath, FileMode.Create))
+                using (FileStream file = new FileStream(filePath, FileMode.OpenOrCreate))
                 {
                     byte[] data = (deserializer as ISerialization).Serialize(element);
                     if (plugins.Count != 0)
